@@ -1,0 +1,62 @@
+.oneImg {
+    height: 68vh;
+    width: 97vw;
+}
+
+.lore-container {
+    background-color: purple;
+    animation: loreimp;
+    animation-duration: 3s;
+    color: white;
+
+}
+
+@keyframes loreimp {
+    0% {
+        background-color: red;
+        left: 5px;
+        top: 20px;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        margin: 3px
+    }
+
+}
+
+.lore-container:hover {
+    background-color: yellow;
+    transform: rotate(180deg);
+
+}
+
+.df {
+    width: 100%;
+    height: 50vh;
+    animation: err ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes err {
+    from {
+        tranfrom: scale(1, 1)
+    }
+
+    to {
+        transform: scale(2, 1)
+    }
+
+}
+
+.oneImg {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 576px) {
+    .oneImg {
+        max-width: 100%;
+        height: auto;
+    }
+}
